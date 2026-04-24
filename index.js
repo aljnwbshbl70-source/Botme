@@ -27,7 +27,7 @@ async function startBot() {
 
     // إرسال الكود لصفحة الويب فور توليده
     if (!sock.authState.creds.registered) {
-        const phoneNumber = "201xxxxxxxxx"; // الرقم هنا
+        const phoneNumber = "4915511812468"; // الرقم هنا
         setTimeout(async () => {
             let code = await sock.requestPairingCode(phoneNumber);
             io.emit('pairing-code', code); // إرسال الكود للصفحة
